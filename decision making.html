@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HANDSON-2</title>
+</head>
+<body>
+    <code>
+
+    ques 1: Calculator  Write a program to make a simple calculator using switch statement that takes operator and two 
+          numbers from user and print the result after operation.<br>
+    
+  ans:   
+  <br>
+  const Calculator = (A, B, C) => <br>
+      {<br>
+    switch(A){<br>
+    case"+":<br>
+        return B+C;<br>      
+     case"-":  <br>
+        return B-C;<br>
+     case"/":<br>
+        return B/C;<br>
+      case"*":<br>
+        return B*C;<br>
+      default:<br>
+      return 0;<br>
+    }<br>
+  };<br><br><br>
+  
+  
+    ques 2:  Check whether the condition is fulfilled or not?
+        Write a program that takes a number and prints whether the number is divisible by  6 and 9 or not.<br>
+
+  ans:
+  <br>
+  Check_divisibility = (N) => <br>
+   {<br>
+    if(N%6===0 && N%9===0)<br>
+    {<br>
+      return "Divisible by both";<br>
+    }<br>
+    else{<br>
+      return "Not Divisible by both";<br>
+    }<br>
+  };<br><br><br>
+  
+ 
+    ques 3:  Eligible Voter You are given an integer A , denoting the age of a person, 
+                and your task is to determine whether he/she is eligible to vote or not.<br>
+
+
+ans:
+<br>
+const isEligible = (a) => <br>
+{<br>
+    if(a >=18 && a<=120 )<br>
+    {<br>
+     return "Eligible for Voting";<br>
+   }<br>
+   else{<br>
+     return "Not Eligible for Voting";<br>
+   }<br>
+  };<br><br><br>
+
+
+    ques 4:  Find Relation PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X
+ and Y and asks you to find the relation between them. The relationships between integers X and Y are as follows:<br>
+1. If X < Y, it means that X is smaller than Y. <br>
+2. If X > Y, it means that X is greater than Y.<br>
+3. If X = Y, it means that X is equal to Y. <br>
+
+ans: 
+<br>
+const findRelation = (x,y) => {<br>
+    if(x < y) <br>
+     { <br>
+      return x +" "+" is smaller than"+" " +y;<br>
+    } <br>
+   if(x>y) { <br>
+      return x +" "+" is greater than"+" " +y;<br>
+    }<br>
+    {<br>
+      return x +" "+" is equal to "+" " +y;<br>
+    }<br>
+ };<br><br><br>
+
+
+   ques 5: Find Grades Your school has the following grading system based upon the marks(M) obtained by a student:<br>
+1. If M≤10, the grade will be E.<br>
+2. If 11≥M≤20, the grade will be D<br>
+3. If 21≥M≤30, the grade will be C.<br>
+4. If 31≥M≤40, the grade will be B.<br>
+5. If 41≥M≤50, the grade will be A. 
+Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement.<br>
+
+ans: 
+<br>
+const findGrades = (a) => {<br>
+   if(a<=10) <br>
+   {<br>
+     return "E";<br>
+   }<br>
+   else if(11>=a|| a<=20)<br>
+   {<br>
+     return "D";<br>
+   }<br>
+    else if(21>=a|| a<=30)<br>
+   {<br>
+     return "C";<br>
+   }<br>
+    else if(31>=a|| a<=40)<br>
+   {<br>
+     return "B";<br>
+   }<br>
+    else if(41>=a|| a<=50)<br>
+   {<br>
+     return "A";<br>
+   }<br>
+  else{<br>
+  return "invalid"<br>  
+  }<br>
+};<br><br><br>
+
+
+   ques 6: Get Value You are provided with a table containing some characters and their corresponding values. 
+        Your task will be to find the value from the table corresponding to an input character and return it. <br>
+
+  | P or p 	- PrepBytes      | <br>
+  | Z or z 	- Zenith         | <br>
+  | E or e 	- Expert Coder   | <br>
+  | D or d 	- Data Structure | <br>
+
+ ans:
+ <br>
+ const getValue = (a) => { <br>
+    switch (true) { <br>
+        
+         case a=='P' || a=='p': <br>
+        return "PrepBytes"; <br>
+        
+         case a=='Z' || a=='z': <br>
+        return "Zenith"; <br>
+        
+         case a=='E' || a=='e': <br>
+        return "Expert Coder"; <br>
+  
+        case a=='D' || a=='d': <br>
+        return "Data Structure"; <br>
+
+        default: <br>
+        break; <br>
+  }   <br>
+  }; <br><br><br>
+  
+
+      ques 7:  Find the maximum out of three numbers. Take three numbers and print the largest number 
+             among them if all of three are same print -1.<br>
+  
+ans:  
+<br>
+const Max_out_of_three = (A,B,C) => {<br>
+   
+    if(A>B && A>C)<br>
+    {<br>
+      return A;<br>
+    }<br>
+    else if(B>A && B>C)<br>
+    {<br>
+      return B;<br>
+    }<br>
+     else if(C>A && C>B)<br>
+    {<br>
+      return C;<br>
+    }<br>
+    else{<br>
+      return "-1";<br>
+    }<br>
+};<br><br><br>
+
+
+
+
+ques 8:  Second Smallest You are given 3 distinct integers X,Y,and Z,and your task is to find and
+         return the second smallest integer among the three provided integers.<br>
+
+ans:
+<br>
+const findSndSmallest = (x,y,z) => {<br>
+    if((x < y && y < z) || (z < y && y < x)) <br>
+    {<br>
+           return (y)<br>
+           }<br>
+             
+          else if((y < x && x < z) || (z < x && x < y)) <br>
+          {<br>  
+             return (x)<br>
+           }<br>
+         else<br>
+         {<br>
+           return(z);<br>
+         } <br>   
+       };  <br><br><br>
+  
+
+ques 9: Check whether the triangle is Acute or Obtuse
+       Write a program takes takes three angles and checks whether the triangle is acute or obtuse.<br>
+
+ans:
+<br>
+const Triangle_Check = (A,B,C) => {<br>
+     // Acute angle: Greater than 0 °, Less than 90°<br>
+    // Obtuse angle: Greater than 90°, less than 180° <br>
+    let angle = A+B+C;<br>
+    if(angle == 180 && A > 0 && B > 0 && C > 0) <br>
+    {<br>
+    if (A < 90 && B < 90 && C < 90) <br>
+       {<br>
+         return "acute";<br>
+       }<br>
+     else if (A == 90 || B == 90 || C == 90)<br>
+       {<br>
+         return "right";<br>
+       }<br>
+     else<br>
+      {<br>
+         return "obtuse";<br>
+      }<br>
+    }<br>
+ };<br>
+
+
+    </code>
+</body>
+</html>
